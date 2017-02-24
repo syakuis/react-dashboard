@@ -1,0 +1,10 @@
+bower_components/
+~/
+node_modules/
+assets/
+.vscode/
+.sass-cache/
+bower.json
+package.json
+*.log
+dist/
