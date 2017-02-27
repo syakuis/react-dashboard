@@ -23,7 +23,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      chunks: [ 'commons' ],
+      chunks: [ 'commons', 'main' ],
       filename: './index.html',
       template: './src/index.html'
     })
@@ -46,9 +46,12 @@ module.exports = {
         })
       },
       {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: 'file-loader?name=[hash].[ext]&publicPath=fonts/&outputPath=fonts/'
+      },
+      {
         test: /\.(png|jpg|gif)$/,
-        include: path.join(__dirname, 'src'),
-        use: 'file-loader?name=[hash].[ext]&publicPath=/images/&outputPath=images/'
+        use: 'file-loader?name=[hash].[ext]&publicPath=images/&outputPath=images/'
       },
       {
         // test: /\.jsx$/, // 로더를 사용할 확장자를 추가합니다.

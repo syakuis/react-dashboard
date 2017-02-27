@@ -37,8 +37,12 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+    "dragula": "^3.7.2",
+    "font-awesome": "^4.7.0",
+    "immutable": "^3.8.1",
+    "interactjs": "^1.2.8",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-addons-update": "^15.4.1"
+    "react-dragula": "^1.1.17"
   }
 }
