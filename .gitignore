@@ -1,8 +1,7 @@
-bower_components/
 ~/
-node_modules/
-assets/
 .vscode/
 .sass-cache/
+bower_components/
+node_modules/
 *.log
 dist/
